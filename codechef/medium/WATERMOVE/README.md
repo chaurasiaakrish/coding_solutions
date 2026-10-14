@@ -63,7 +63,7 @@ At the end, the array is $[0, 5, 0, 5, 5]$, and the maximum is $5$.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T16:11:26.617Z  
+**Submitted:** 2026-10-14T16:12:59.326Z  
 
 ```py
 # cook your dish here
@@ -72,10 +72,8 @@ for _ in range(T):
     N,K=map(int,input().split())
     A=list(map(int,input().split()))
     A.sort()
-    if K >= N-1:
-        print(max(A))
-    else:
-        print(min(max(A), sum(A[:K + 1])))
+    ans = max(A[-1], A[0] + A[1])
+    print(ans)
 ```
 
 ---
