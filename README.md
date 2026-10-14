@@ -31,13 +31,11 @@
 
 ```
 📦 coding-solutions/
-├── leetcode/
+├── codechef/
 │   ├── easy/
 │   ├── medium/
 │   └── hard/
-├── hackerrank/
-├── codechef/
-└── gfg/
+└──── hackerrank/
 ```
 
 ---
