@@ -58,7 +58,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T15:59:40.532Z  
+**Submitted:** 2026-10-14T16:00:16.618Z  
 
 ```py
 # cook your dish here
@@ -66,7 +66,7 @@ T=int(input())
 for _ in range(T):
     N,K=map(int,input().split())
     A=list(map(int,input().split()))
-    A.sort()(reverse=True)
+    A.sort(reverse=True)
     print(sum(A[:K+1]))
 ```
 
