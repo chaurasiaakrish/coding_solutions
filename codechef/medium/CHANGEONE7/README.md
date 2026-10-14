@@ -53,7 +53,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T15:18:06.561Z  
+**Submitted:** 2026-10-14T15:21:04.546Z  
 
 ```py
 # cook your dish here
@@ -61,6 +61,8 @@ T=int(input())
 for _ in range:
     N=int(input())
     A=list(int(input()).split())
+    a=len(A)
+    
     
 ```
 
