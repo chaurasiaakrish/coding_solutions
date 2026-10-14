@@ -7,11 +7,7 @@ for _ in range(T):
     if a==2:
         print(0)
     else:
-        minn=min(A)
-        sec_minn=float("inf")
-        for i in A:
-            if i==minn:
-                continue
-            else:
-                sec_minn=min(sec_minn,i)
-        print(minn-sec_minn)            
+        A.sort()
+        ans1=A[-1]-A[1]
+        ans2=A[-2]-A[0]
+        print(min(ans1,ans2))    
