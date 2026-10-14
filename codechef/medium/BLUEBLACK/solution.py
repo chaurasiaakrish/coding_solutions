@@ -1,5 +1,5 @@
 # cook your dish here
-A,B=int(input())
+A,B=map(int,input().split())
 a=A*3
 b=A+B
 print(min(a,b))
