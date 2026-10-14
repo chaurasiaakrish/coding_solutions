@@ -53,7 +53,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T15:25:40.546Z  
+**Submitted:** 2026-10-14T15:29:27.914Z  
 
 ```py
 # cook your dish here
@@ -65,8 +65,14 @@ for _ in range(T):
     if a==2:
         print(0)
     else:
-        print(max(A)-min(A))
-    
+        minn=min(A)
+        sec_minn=float("inf")
+        for i in A:
+            if i==minn:
+                continue
+            else:
+                sec_minn=min(sec_minn,i)
+        print(minn-sec_minn)            
 ```
 
 ---
