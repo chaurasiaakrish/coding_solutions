@@ -4,5 +4,7 @@ for _ in range(T):
     N,K=map(int,input().split())
     A=list(map(int,input().split()))
     A.sort()
-    ans1=sum(A[:K+1])
-    maxx
+    if K >= N-1:
+        print(max(A))
+    else:
+        print(min(max(A), sum(A[:K + 1])))
