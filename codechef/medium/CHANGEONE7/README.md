@@ -53,16 +53,19 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-14T15:21:04.546Z  
+**Submitted:** 2026-10-14T15:25:40.546Z  
 
 ```py
 # cook your dish here
 T=int(input())
-for _ in range:
+for _ in range(T):
     N=int(input())
-    A=list(int(input()).split())
+    A=list(map(int,input().split()))
     a=len(A)
-    
+    if a==2:
+        print(0)
+    else:
+        print(max(A)-min(A))
     
 ```
 
