@@ -2,7 +2,7 @@ def max_sum_subarray_k(arr, n, k):
   
 
     # Step 1: First window
-    
+    for i in range(0,)
 
     # Step 2: Slide the window
    
