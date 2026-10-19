@@ -1,10 +1,13 @@
 def max_sum_subarray_k(arr, n, k):
-  
-
-    # Step 1: First window
+    maxx=float("-inf")
     
-
+    # Step 1: First window
+    for low in range(len(arr)):
+        high=
+        while low<=high:
+            maxx=max(max,arr[i])
     # Step 2: Slide the window
+    
    
  
  
