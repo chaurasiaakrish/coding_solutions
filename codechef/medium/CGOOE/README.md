@@ -52,11 +52,18 @@ At position $7$, the value $410$ is smaller than the previous five values: $600,
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T15:49:10.143Z  
+**Submitted:** 2026-10-19T16:19:15.143Z  
 
 ```py
 # cook your dish here
-
+T=int(input())
+for i in range(T):
+    N=int(input())
+    A=list(map(int,input().split))
+    for i in range(len(A)-1,-1,-1):
+        
+        
+        
 ```
 
 ---
