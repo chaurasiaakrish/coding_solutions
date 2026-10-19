@@ -59,14 +59,14 @@ The distinct elements are $12$, $7$, $4$, $15$, and $9$, in the order of their f
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T15:45:38.688Z  
+**Submitted:** 2026-10-19T15:46:18.551Z  
 
 ```py
 # cook your dish here
 N=int(input())
 A=list(map(int,input().split()))
 l=(list(dict.fromkeys(A)))
-print(l)
+print(*l)
 ```
 
 ---
