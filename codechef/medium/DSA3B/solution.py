@@ -1,9 +1,9 @@
 def max_sum_subarray_k(arr, n, k):
-  
+  max=float("-inf")
 
     # Step 1: First window
-    for i in range(0,)
-
+    for i in range(X-1):
+        
     # Step 2: Slide the window
    
  
