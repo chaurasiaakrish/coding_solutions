@@ -77,7 +77,7 @@ Note that the subarrays are traversed from left to right.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T16:05:07.191Z  
+**Submitted:** 2026-10-19T16:06:16.211Z  
 
 ```py
 def max_sum_subarray_k(arr, n, k):
