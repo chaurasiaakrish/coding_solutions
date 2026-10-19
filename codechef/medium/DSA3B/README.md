@@ -77,20 +77,20 @@ Note that the subarrays are traversed from left to right.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-19T15:58:24.675Z  
+**Submitted:** 2026-10-19T16:05:07.191Z  
 
 ```py
 def max_sum_subarray_k(arr, n, k):
-  
-
+    maxx=float("-inf")
+    
     # Step 1: First window
-    for i in range(0,)
-
+    for low in range(len(arr)):
+        high=low+k
+        while low<=high:
+            maxx=max(max,arr[low])
+            low+=1
     # Step 2: Slide the window
-   
- 
- 
-  
+        low=high
 # -- Input handling (Dont edit below code) --
 
 T = int(input())
