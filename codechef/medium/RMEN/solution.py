@@ -7,7 +7,7 @@ while i<len(S):
         value=207-ord(S[i])
         s=s+chr(value)
         i+=1
-    else:
+    elif i+1<len(S) and S[i+1]=='#':
         value=233-ord(S[i])
         s=s+chr(value)
         i+=2
