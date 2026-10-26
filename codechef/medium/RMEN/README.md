@@ -70,7 +70,7 @@ Therefore, the decoded message is `beunstoppable`.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T15:12:45.304Z  
+**Submitted:** 2026-10-26T15:08:56.346Z  
 
 ```py
 # cook your dish here
@@ -78,14 +78,16 @@ S=input()
 s=""
 i=0
 while i<len(S):
-    if "a"<=S[i]<="n":
+    if S[i]=="#":
+        i+=1
+    elif "a"<=S[i]<="n":
         value=207-ord(S[i])
         s=s+chr(value)
         i+=1
-    elif i+1<len(S) and S[i+1]=='#':
+    else:
         value=233-ord(S[i])
         s=s+chr(value)
-        i+=2
+        i+=1
 print(s)        
     
 ```
