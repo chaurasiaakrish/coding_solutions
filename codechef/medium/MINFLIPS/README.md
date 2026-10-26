@@ -64,7 +64,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T14:25:48.875Z  
+**Submitted:** 2026-10-26T14:24:44.415Z  
 
 ```py
 # cook your dish here
@@ -86,7 +86,7 @@ for _ in range(T):
         if req==0:
             print(0)
         else:
-            print(abs(req)//2)
+            print(req//2)
 ```
 
 ---
