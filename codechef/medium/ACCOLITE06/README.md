@@ -48,7 +48,7 @@ NO
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T15:20:11.344Z  
+**Submitted:** 2026-10-26T15:22:09.102Z  
 
 ```py
 # cook your dish here
@@ -56,7 +56,10 @@ T=int(input())
 for _ in range(T):
     N=int(input())
     A=list(map(int,input().split()))
-    A.sort()
+    if sum(A)%2!=0:
+        print("NO")
+    else:
+        print("YES")
     
 ```
 
