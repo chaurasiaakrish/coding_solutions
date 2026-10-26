@@ -70,13 +70,16 @@ Therefore, the decoded message is `beunstoppable`.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T14:54:29.148Z  
+**Submitted:** 2026-10-26T14:57:24.148Z  
 
 ```py
 # cook your dish here
 S=input()
 s=""
-
+i=0
+while i<len(S):
+    if S[i]
+    
 ```
 
 ---
