@@ -63,12 +63,12 @@ To achieve a sum of 2, there are two ways:
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T14:29:44.668Z  
+**Submitted:** 2026-10-26T15:32:31.278Z  
 
 ```py
 # cook your dish here
 S=int(input())
-
+print(S)
 ```
 
 ---
