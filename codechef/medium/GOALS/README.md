@@ -54,14 +54,14 @@ YES
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-26T14:00:24.651Z  
+**Submitted:** 2026-10-26T14:01:09.634Z  
 
 ```py
 # cook your dish here
 T=int(input())
 for _ in range(T):
     X,Y=map(int,input().split())
-    if X==Y:
+    if X==Y and X!=0 and Y!=0:
         print("YES")
     else:
         print("NO")
