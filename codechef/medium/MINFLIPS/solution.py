@@ -17,4 +17,4 @@ for _ in range(T):
         if req==0:
             print(0)
         else:
-            print(req//2)
+            print(abs(req)//2)
