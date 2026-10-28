@@ -8,4 +8,4 @@ for _ in range(T):
         summ=A[i+1]-A[i]
         A[i+1]=summ
         A.remove(A[i])
-    print (A)    
+    print (A[0])
