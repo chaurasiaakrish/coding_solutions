@@ -68,19 +68,11 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T16:18:05.878Z  
+**Submitted:** 2026-10-28T15:57:30.882Z  
 
 ```py
 # cook your dish here
-T=int(input())
-for _ in range(T):
-    N=int(input())
-    A=list(map(int,input().split()))
-    i=0;j=1
-    while j<len(A):
-        if A[i]!=A[j]:
-            
-    
+
 ```
 
 ---
