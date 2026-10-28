@@ -70,7 +70,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:47:57.682Z  
+**Submitted:** 2026-10-28T15:51:28.989Z  
 
 ```py
 # cook your dish here
@@ -82,7 +82,7 @@ for _ in range(T):
     while i in range(len(S)):
         if S[i]=="1":
             alarm+=1
-            i=i+K
+            i=i+K+1
         else:
             i+=1
     print(alarm)        
