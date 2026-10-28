@@ -66,7 +66,7 @@ BBBBAAAAABBBBBBB
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:00:52.385Z  
+**Submitted:** 2026-10-28T15:02:02.387Z  
 
 ```py
 # cook your dish here
@@ -78,7 +78,7 @@ for _  in T:
     pass=0
     for i in S:
         freq[i]=freq.get(i,0)+1
-    for i in freq:
+        
         
         
 ```
