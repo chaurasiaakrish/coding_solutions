@@ -7,6 +7,6 @@ for _  in T:
     pass=0
     for i in S:
         freq[i]=freq.get(i,0)+1
-    for i in freq:
+        
         
         
