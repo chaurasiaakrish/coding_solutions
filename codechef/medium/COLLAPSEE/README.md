@@ -67,7 +67,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T16:31:55.005Z  
+**Submitted:** 2026-10-28T16:34:39.577Z  
 
 ```py
 # cook your dish here
@@ -75,11 +75,11 @@ T=int(input())
 for _ in range(T):
     N=int(input())
     A=list(map(int, input().split()))
-    while len(A)>1:
-        for i in range(len(A)-1):
-        summ=nums[i+1]-nums[i]
-        nums.replace(nums[i+1],summ)
-        nums.remove(nums[i])
+    i=0
+    while i<len(A)-1:
+        summ=A[i+1]-A[i]
+        A[i+1]=summ
+        A.remove(A[i])
     print (A)    
 ```
 
