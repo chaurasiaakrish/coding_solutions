@@ -7,7 +7,7 @@ for _ in range(T):
     while i in range(len(S)):
         if S[i]=="1":
             alarm+=1
-            i=i+K+1
+            i=i+K
         else:
             i+=1
     print(alarm)        
