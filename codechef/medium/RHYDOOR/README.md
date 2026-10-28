@@ -66,7 +66,7 @@ BBBBAAAAABBBBBBB
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T15:29:50.696Z  
+**Submitted:** 2026-10-28T15:25:11.383Z  
 
 ```py
 # cook your dish here
@@ -75,14 +75,8 @@ for _  in range(T):
     N=int(input())
     S=input()
     i=0
-    pas=3;op=0
     while i<len(S):
-        if S[i:pas+i]=="AAA" or S[i:pas+i]=="BBB":
-            op+=1
-            i=i+pas
-        else:
-            i+=1
-    print(op)    
+        
 ```
 
 ---
