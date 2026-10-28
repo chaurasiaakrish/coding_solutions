@@ -3,9 +3,9 @@ T=int(input())
 for _ in range(T):
     N=int(input())
     A=list(map(int, input().split()))
-    i=0
-    while i<len(A)-1:
-        summ=A[i+1]-A[i]
-        A[i+1]=summ
-        A.remove(A[i])
-    print (A[0])
+    while len(A)>1:
+        for i in range(len(A)-1):
+        summ=nums[i+1]-nums[i]
+        nums.replace(nums[i+1],summ)
+        nums.remove(nums[i])
+    print (A)    
