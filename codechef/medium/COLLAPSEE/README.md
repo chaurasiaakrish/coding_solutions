@@ -67,7 +67,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-28T16:34:39.577Z  
+**Submitted:** 2026-10-28T16:37:12.294Z  
 
 ```py
 # cook your dish here
@@ -80,7 +80,7 @@ for _ in range(T):
         summ=A[i+1]-A[i]
         A[i+1]=summ
         A.remove(A[i])
-    print (A)    
+    print (A[0])
 ```
 
 ---
