@@ -1,33 +1,39 @@
-MAX_SIZE = 101
-a = [0] * MAX_SIZE
-front = 0
-rear = -1
-current_size = 0
+class CircularQueue:
+    def __init__(self, max_size):
+        self.max_size = max_size
+        self.a = [0] * max_size
+        self.front = 0
+        self.rear = -1
+        self.current_size = 0
 
-def isEmpty():
-    return current_size == 0
+    def is_empty(self):
+        return self.current_size == 0
 
-def isFull():
-    return current_size == MAX_SIZE
+    def is_full(self):
+        return self.current_size == self.max_size
 
-def size():
-    return current_size
+    def size(self):
+        return self.current_size
 
-def enqueue(item):
-    global rear, current_size
-    if isFull():
-        print("Queue is full. Cannot enqueue.")
-        return
-    rear = (rear + 1) % MAX_SIZE
-    a[______] = item
-    current_size += 1
+    def enqueue(self, item):
+        if self.is_full():
+            print("Queue is full. Cannot enqueue.")
+            return
+        self.rear = (self.rear + 1) % self.max_size  # Circular increment
+        self.a[self.rear] = item
+        self.current_size += 1
 
-def dequeue():
-    global front, current_size
-    if isEmpty():
-        print("Queue is empty. Cannot dequeue.")
-        return -1
-    removed_item = a[front]
-    front = (front + 1) % MAX_SIZE
-    current_size -= 1
-    return _________
+    def dequeue(self):
+        if self.is_empty():
+            print("Queue is empty. Cannot dequeue.")
+            return -1  # Return a sentinel value or throw an exception
+        removed_item = self.a[self.front]
+        self.front = (self.front + 1) % self.max_size  # Circular increment
+        self.current_size -= 1
+        return removed_item
+
+
+if __name__ == "__main__":
+    n = 10
+    #  write your code here
+    
