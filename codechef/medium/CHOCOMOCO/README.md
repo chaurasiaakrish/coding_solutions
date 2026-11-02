@@ -52,12 +52,12 @@ YES
 
 ## Solution
 
-**Language:** Python  
+**Language:** plain_text  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-02T13:48:40.417Z  
+**Submitted:** 2026-11-02T13:48:34.447Z  
 
-```py
+```plain_text
 # cook your dish here
 
 ```
