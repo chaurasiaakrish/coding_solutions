@@ -52,22 +52,14 @@ YES
 
 ## Solution
 
-**Language:** Python  
+**Language:** plain_text  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-02T13:54:42.801Z  
+**Submitted:** 2026-11-02T13:48:36.438Z  
 
-```py
+```plain_text
 # cook your dish here
-T=int(input())
-for _ in range(T):
-    N=int(input())
-    large=N//4
-    small=N%4
-    if small>=2:
-        print("YES")
-    else:
-        print("NO")
+
 ```
 
 ---
