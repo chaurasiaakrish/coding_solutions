@@ -53,7 +53,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-02T14:45:34.603Z  
+**Submitted:** 2026-11-02T14:41:10.426Z  
 
 ```py
 # cook your dish here
@@ -61,9 +61,8 @@ T=int(input())
 for _ in range(T):
     N=int(input())
     A=list(map(int,input().split()))
-    i=0;j=0;res=0
+    great=0;less=0;ans=0;i=0;j=i+1;res=0
     while i <len(A):
-        great=0;less=0;j=0
         while j<len(A):
             if A[i]>=A[j]:
                 great+=1
