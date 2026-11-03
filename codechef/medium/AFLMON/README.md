@@ -53,7 +53,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-02T15:57:03.672Z  
+**Submitted:** 2026-11-02T14:45:34.603Z  
 
 ```py
 # cook your dish here
@@ -61,23 +61,21 @@ T=int(input())
 for _ in range(T):
     N=int(input())
     A=list(map(int,input().split()))
-    # i=0;j=0;res=0
-    # while i <len(A):
-    #     great=0;less=0;j=0
-    #     while j<len(A):
-    #         if A[i]>=A[j]:
-    #             great+=1
-    #             j+=1
-    #         else:
-    #             less+=1
-    #             j+=1
-    #     if great > less:
-    #         res+=1
-    #     i+=1  
-    # print(res)    
-    A.sort()
-    i=len(A)-1
-    while A[i]
+    i=0;j=0;res=0
+    while i <len(A):
+        great=0;less=0;j=0
+        while j<len(A):
+            if A[i]>=A[j]:
+                great+=1
+                j+=1
+            else:
+                less+=1
+                j+=1
+        if great > less:
+            res+=1
+        i+=1  
+    print(res)    
+              
 ```
 
 ---
