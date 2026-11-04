@@ -75,7 +75,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T15:58:12.256Z  
+**Submitted:** 2026-11-04T16:06:08.258Z  
 
 ```py
 # cook your dish here
@@ -83,10 +83,19 @@ T=int(input())
 for _   in range(T):
     N,M=map(int(input().split()))
     grid = []
+    l=[]
     for _ in range(N):
-    # Read the string, split it into characters, and convert each to an int
-    row = list(map(int, input().strip()))
-    grid.append(row)
+        row=list(map(int, input().strip()))
+        grid.append(row)
+    for i in range(N):
+        for j in rnage(M):
+            if grid[i][j]=='1':
+                l.append([i+1,j+1])
+    for i in range(len(l)):
+        length=max(length,l[i][0])
+        breadth=max(length,l[i][0])
+        
+                
 ```
 
 ---
