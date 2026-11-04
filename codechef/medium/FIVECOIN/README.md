@@ -78,11 +78,17 @@ Use the $5$-rupee coin and three $1$-rupee coins.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T15:01:37.113Z  
+**Submitted:** 2026-11-04T15:05:27.774Z  
 
 ```py
 # cook your dish here
-
+N=int(input())
+if N<5:
+    print(N)
+else:
+    rem=N%5
+    quo=N//5
+    print(rem+quo)
 ```
 
 ---
