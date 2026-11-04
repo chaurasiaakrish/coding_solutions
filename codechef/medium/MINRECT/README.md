@@ -75,7 +75,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T16:10:34.430Z  
+**Submitted:** 2026-11-04T16:11:54.782Z  
 
 ```py
 # cook your dish here
@@ -88,12 +88,10 @@ for _   in range(T):
         row=list(map(int, input().strip()))
         grid.append(row)
     for i in range(N):
-        for j in rnage(M):
-            if grid[i][j]=='1':
+        for j in range(M):
+            if grid[i][j]==1:
                 l.append([i+1,j+1])
     print(l[0][0]*l[-1][1])
-        
-                
 ```
 
 ---
