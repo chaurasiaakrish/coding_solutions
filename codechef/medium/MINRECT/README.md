@@ -75,7 +75,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T16:14:25.786Z  
+**Submitted:** 2026-11-04T16:17:33.040Z  
 
 ```py
 # cook your dish here
@@ -94,7 +94,13 @@ for _   in range(T):
     if len(l)==0:
         print(0)
     else:
-        print(l[0][0]*l[-1][1])
+        min_row = min(coord[0] for coord in l)
+        max_row = max(coord[0] for coord in l)
+        min_col = min(coord[1] for coord in l)
+        max_col = max(coord[1] for coord in l)
+        height = max_row - min_row + 1
+        width = max_col - min_col + 1
+        print(height*width)
 ```
 
 ---
