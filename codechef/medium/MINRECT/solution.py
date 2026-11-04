@@ -8,9 +8,7 @@ for _   in range(T):
         row=list(map(int, input().strip()))
         grid.append(row)
     for i in range(N):
-        for j in rnage(M):
-            if grid[i][j]=='1':
+        for j in range(M):
+            if grid[i][j]==1:
                 l.append([i+1,j+1])
     print(l[0][0]*l[-1][1])
-        
-                
