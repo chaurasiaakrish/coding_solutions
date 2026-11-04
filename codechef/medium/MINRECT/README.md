@@ -75,13 +75,13 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T16:11:54.782Z  
+**Submitted:** 2026-11-04T16:14:14.782Z  
 
 ```py
 # cook your dish here
 T=int(input())
 for _   in range(T):
-    N,M=map(int(input().split()))
+    N,M=map(int,input().split())
     grid = []
     l=[]
     for _ in range(N):
@@ -91,7 +91,10 @@ for _   in range(T):
         for j in range(M):
             if grid[i][j]==1:
                 l.append([i+1,j+1])
-    print(l[0][0]*l[-1][1])
+    if len(l)==0:
+        print(0)
+    else:
+        print(l[0][0]*l[-1][1])
 ```
 
 ---
