@@ -11,8 +11,6 @@ for _   in range(T):
         for j in rnage(M):
             if grid[i][j]=='1':
                 l.append([i+1,j+1])
-    for i in range(len(l)):
-        length=max(length,l[i][0])
-        breadth=max(length,l[i][0])
+    print(l[0][0]*l[-1][1])
         
                 
