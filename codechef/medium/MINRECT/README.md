@@ -75,13 +75,13 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T16:17:33.040Z  
+**Submitted:** 2026-11-04T16:12:28.778Z  
 
 ```py
 # cook your dish here
 T=int(input())
 for _   in range(T):
-    N,M=map(int,input().split())
+    N,M=map(int(input().split()))
     grid = []
     l=[]
     for _ in range(N):
@@ -91,16 +91,7 @@ for _   in range(T):
         for j in range(M):
             if grid[i][j]==1:
                 l.append([i+1,j+1])
-    if len(l)==0:
-        print(0)
-    else:
-        min_row = min(coord[0] for coord in l)
-        max_row = max(coord[0] for coord in l)
-        min_col = min(coord[1] for coord in l)
-        max_col = max(coord[1] for coord in l)
-        height = max_row - min_row + 1
-        width = max_col - min_col + 1
-        print(height*width)
+    print(l[0][0]*l[-1][1])
 ```
 
 ---
