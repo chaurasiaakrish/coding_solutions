@@ -4,4 +4,6 @@ for _ in range(T):
     N=int(input())
     A=list(map(int,input().split()))
     L=0;R=0
-    
+    for i in A:
+        if A%2!=0:
+            
