@@ -65,14 +65,17 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T16:21:34.172Z  
+**Submitted:** 2026-11-04T16:24:11.367Z  
 
 ```py
 # cook your dish here
 import math
-T=int(input(())
+T=int(input())
 X,Y,D=map(int,input().split())
-if abs(X-Y)<=D
+if abs(X-Y)<=D:
+    print(max(X,Y))
+else:
+    print(math.lcm(X,Y))
 ```
 
 ---
