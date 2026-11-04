@@ -72,7 +72,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T15:17:17.796Z  
+**Submitted:** 2026-11-04T15:27:01.061Z  
 
 ```py
 # cook your dish here
@@ -80,10 +80,20 @@ T=int(input())
 for _ in range(T):
     N=int(input())
     A=list(map(int,input().split()))
-    L=0;R=0
-    for i in A:
-        if i%2!=0:
-            
+    count=0
+    L=0
+    R=0
+    size=float("-inf")
+    for i in range(len(A)):
+        if A[i]%2!=0:
+            count+=1
+            R=i
+            size=max(size,(R-L+1))
+            L=R
+    if count%2==0:
+        print(len(A))
+    else:
+        print(size)
 ```
 
 ---
