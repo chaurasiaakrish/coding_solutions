@@ -72,7 +72,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T15:19:30.567Z  
+**Submitted:** 2026-11-04T15:20:31.824Z  
 
 ```py
 # cook your dish here
@@ -87,7 +87,7 @@ for _ in range(T):
     if count%2==0:
         print(len(A))
     else:
-        
+        for j in A
 ```
 
 ---
