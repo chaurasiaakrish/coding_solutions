@@ -10,4 +10,4 @@ for _ in range(T):
     if count%2==0:
         print(len(A))
     else:
-        for j in A
+        
