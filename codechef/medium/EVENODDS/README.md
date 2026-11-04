@@ -72,7 +72,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-04T15:33:16.787Z  
+**Submitted:** 2026-11-04T15:42:27.787Z  
 
 ```py
 # cook your dish here
@@ -87,17 +87,24 @@ for _ in range(T):
     while i< len(A):
         if A[i]%2!=0:
             count+=1
-            R=i-1
-            i+=1
-        else:
-            L=i
-            size=max(size,(R-L+1))
-            R+=1
             i+=1
     if count%2==0:
         print(len(A))
+    elif count==len(A):
+        print(len(A)-1)
     else:
-        print(size)
+        while i<len(A):
+            if A[i]!=0:
+                R=i
+                size=max(size,R-L)
+                L=i+1
+                R=L
+                i+=1
+            else:
+                R+=1
+                size=size=max(size,R-L+1)
+                i+=1
+        print(size)        
 ```
 
 ---
