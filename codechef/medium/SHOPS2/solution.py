@@ -8,5 +8,4 @@ for _  in range(T):
     case2=sum(B)+D
     case3=case1+case2
     summ = sum(min(a,b)for a, b in zip(A,B))   
-    case4=summ+2*D
-    print(min(case1,case2,case3,case4))
+    print(min(case1,case2,case3,summ))
