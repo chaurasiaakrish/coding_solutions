@@ -60,7 +60,7 @@ If Chef went to both stores, the cost would be $\ge 200$.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-11T15:34:53.080Z  
+**Submitted:** 2026-11-11T15:36:24.189Z  
 
 ```py
 # cook your dish here
@@ -73,11 +73,7 @@ for _  in range(T):
     case2=sum(B)+D
     case3=case1+case2
     i=0;j=0;summ=0
-    while i>len(A) and j>len(B):
-        summ=summ+min(i,j)
-        i+=1
-        j+=1
-    case4=summ+2*D    
+    summ = sum(min(a,b)for a, b in zip(A,B))   
     print(min(case1,case2,case3,case4))
 ```
 
