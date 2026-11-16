@@ -78,7 +78,7 @@ Both extracted digits are zero. The resulting number is printed as $0$.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-16T15:41:23.652Z  
+**Submitted:** 2026-11-16T15:46:24.650Z  
 
 ```py
 # cook your dish here
@@ -96,7 +96,11 @@ if flag==False:
     print(-1)
 else:
     l.sort()
-    
+    if int(l[0])%2==0:
+        print(int("".join(l[::-1])))
+    else:
+        for i in l:
+            if 
 ```
 
 ---
