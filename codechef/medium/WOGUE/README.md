@@ -58,11 +58,26 @@ BGGGG
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-16T15:15:44.998Z  
+**Submitted:** 2026-11-16T15:19:37.690Z  
 
 ```py
 # cook your dish here
-
+T=int(input())
+for _ in range(T):
+    S=input()
+    R=input()
+    i=0;j=0
+    M=""
+    while i<len(S) and j<len(R):
+        if S[i]==R[j]:
+            M+='G'
+            i+=1
+            j+=1
+        else:
+            M+='B'
+            i+=1
+            j+=1
+    print(M)        
 ```
 
 ---
