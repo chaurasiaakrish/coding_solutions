@@ -17,4 +17,7 @@ else:
         print(int("".join(l[::-1])))
     else:
         for i in l:
-            if 
+            if int(i)%2==0:
+                l.remove(i)
+                break
+        print(int("".join(l[::-1])+i))
