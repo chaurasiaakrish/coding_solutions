@@ -6,10 +6,11 @@ for i in S:
         l.append(i)
 flag=False
 for j in l:
-    if int[j]%2==0:
+    if int(j)%2==0:
         flag=True
         break
 if flag==False:
     print(-1)
 else:
+    l.sort()
     
