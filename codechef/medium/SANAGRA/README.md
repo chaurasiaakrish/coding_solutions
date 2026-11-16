@@ -66,7 +66,7 @@ Both sentences contain `hello` twice and `world` once. Punctuation separates the
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-16T16:08:14.324Z  
+**Submitted:** 2026-11-16T16:08:17.860Z  
 
 ```py
 # cook your dish here
@@ -93,7 +93,7 @@ for l in c2:
 if freq1==freq2:
     print("The sentences are anagrams.")
 else:
-    print("")
+    print("The sentences are not anagrams.")
 ```
 
 ---
