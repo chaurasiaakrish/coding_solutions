@@ -22,4 +22,4 @@ for l in c2:
 if freq1==freq2:
     print("The sentences are anagrams.")
 else:
-    print("")
+    print("The sentences are not anagrams.")
