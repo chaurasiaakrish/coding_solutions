@@ -13,4 +13,8 @@ if flag==False:
     print(-1)
 else:
     l.sort()
-    
+    if int(l[0])%2==0:
+        print(int("".join(l[::-1])))
+    else:
+        for i in l:
+            if 
