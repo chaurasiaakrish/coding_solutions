@@ -50,12 +50,12 @@ YES
 
 ## Solution
 
-**Language:** Python  
+**Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-16T14:43:16.836Z  
+**Submitted:** 2026-11-16T14:44:31.612Z  
 
-```py
+```cpp
 # cook your dish here
 T=int(input())
 for _ in range(T):
