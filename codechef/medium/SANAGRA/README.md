@@ -66,11 +66,32 @@ Both sentences contain `hello` twice and `world` once. Punctuation separates the
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-16T15:56:45.646Z  
+**Submitted:** 2026-11-16T16:07:45.325Z  
 
 ```py
 # cook your dish here
-
+s1=input()
+s2=input()
+c1=""
+c2=""
+freq1={}
+freq2={}
+for i in s1:
+    if i.isalpha():
+        c1+=i.lower()
+    else:
+        c1+=""
+for j in s2:
+    if j.isalpha():
+        c2+=j.lower()
+    else:
+        c2+=""        
+for k in c1:
+    freq1[k]=freq1.get(k,0)+1
+for l in c2:
+    freq2[l]=freq2.get(l,0)+1    
+if freq1==freq2:
+    print()
 ```
 
 ---
