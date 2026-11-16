@@ -66,7 +66,7 @@ Both sentences contain `hello` twice and `world` once. Punctuation separates the
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-16T16:07:45.325Z  
+**Submitted:** 2026-11-16T16:09:39.270Z  
 
 ```py
 # cook your dish here
@@ -80,18 +80,20 @@ for i in s1:
     if i.isalpha():
         c1+=i.lower()
     else:
-        c1+=""
+        c1+=" "
 for j in s2:
     if j.isalpha():
         c2+=j.lower()
     else:
-        c2+=""        
-for k in c1:
+        c2+=" "        
+for k in c1.split():
     freq1[k]=freq1.get(k,0)+1
-for l in c2:
+for l in c2.split():
     freq2[l]=freq2.get(l,0)+1    
 if freq1==freq2:
-    print()
+    print("The sentences are anagrams.")
+else:
+    print("The sentences are not anagrams.")
 ```
 
 ---
