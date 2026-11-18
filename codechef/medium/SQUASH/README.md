@@ -68,7 +68,7 @@ NO
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T15:38:05.150Z  
+**Submitted:** 2026-11-18T15:36:26.184Z  
 
 ```py
 # cook your dish here
@@ -87,7 +87,7 @@ for _ in range(T):
             j+=1
     if N==K:
         print("YES")
-    elif N-count<=K:
+    elif abs(len(S)-count)==K:
         print("YES")
     else:
         print("NO")
