@@ -8,4 +8,4 @@ for _ in range(T):
         summ=min(summ,i+j)
         i+=1
         j+=1
-    return    
+    print(sum(A)-summ/2)
