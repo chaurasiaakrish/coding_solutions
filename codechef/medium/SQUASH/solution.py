@@ -14,7 +14,7 @@ for _ in range(T):
             j+=1
     if N==K:
         print("YES")
-    elif N-count<=K:
+    elif abs(len(S)-count)==K:
         print("YES")
     else:
         print("NO")
