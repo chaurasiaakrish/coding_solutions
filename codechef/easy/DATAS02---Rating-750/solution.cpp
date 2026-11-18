@@ -1,20 +1,31 @@
-# 3. Count Movies vs TV Shows
-def count_content_types(df):
+import pandas as pd
+
+
+# 1. Load Netflix dataset
+def load_data():
     """
     TODO:
-    Count and print how many Movies and TV Shows are present.
-    """
+    Load the Netflix dataset from the CSV file:
+    - File path: "./netflix.csv"
+    
 
-    print("\nContent Type Distribution:")
-    content_counts = print("\nContent Type Distribution:")
-    content_counts = df['type'].value_counts() 
-
-    print("\nDataset Overview:")
-    print("Shape of the dataset:", df.shape)
-    print("Column Names:", list(df.columns))
-
-    """
-    - Column names of the dataset
-    - Shape of the dataset
     Print:
+    - First 5 rows showing: title, type, release_year
+
+    Return:
+        Pandas DataFrame
+    """
+
+    df = pd.read_csv("./netflix.csv")
+    print("Dataset loaded successfully!")
+
+    print("\nSample Data (first 5 rows):")
+    print(df[['title', 'type', 'release_year']].head(5))
+
+    return df
+
+
+# 2. Display basic dataset information
+def explore_dataset(df):
+    """
     TODO:
