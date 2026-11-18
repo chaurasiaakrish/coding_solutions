@@ -3,8 +3,9 @@ T=int(input())
 for _ in range(T):
     N=int(input())
     A=list(map(int,input().split()))
-    A.sort()
-    summ=sum(A)
-    summ=summ-(A[0]/2+A[1]/2)
-    print(int(summ))
-    
+    i=0;j=1;summ=float("inf")
+    while i<len(A)-1 and j<len(A):
+        summ=min(summ,i+j)
+        i+=1
+        j+=1
+    return    
