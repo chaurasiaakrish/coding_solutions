@@ -72,12 +72,12 @@ YES
 
 ## Solution
 
-**Language:** C++  
+**Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T15:05:23.741Z  
+**Submitted:** 2026-11-18T15:04:12.197Z  
 
-```cpp
+```py
 # cook your dish here
 N=int(input())
 flag=True
