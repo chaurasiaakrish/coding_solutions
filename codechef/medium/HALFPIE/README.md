@@ -63,7 +63,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T15:20:45.581Z  
+**Submitted:** 2026-11-18T15:18:21.285Z  
 
 ```py
 # cook your dish here
@@ -73,10 +73,10 @@ for _ in range(T):
     A=list(map(int,input().split()))
     i=0;j=1;summ=float("inf")
     while i<len(A)-1 and j<len(A):
-        summ=min(summ,A[i]+A[j])
+        summ=min(summ,i+j)
         i+=1
         j+=1
-    print(sum(A)-summ//2)
+    return    
 ```
 
 ---
