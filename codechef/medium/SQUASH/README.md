@@ -68,7 +68,7 @@ NO
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T15:33:12.560Z  
+**Submitted:** 2026-11-18T15:34:33.551Z  
 
 ```py
 # cook your dish here
@@ -80,9 +80,15 @@ for _ in range(T):
     while j<len(S):
         if S[i]==S[j]:
             count+=1
+            i+=1
+            j+=1
         else:
             i+=1
             j+=1
+    if abs(len(S)-count)==K:
+        print("YES")
+    else:
+        print("NO")
 ```
 
 ---
