@@ -63,7 +63,7 @@ Output
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-11-18T15:18:53.960Z  
+**Submitted:** 2026-11-18T15:19:59.195Z  
 
 ```py
 # cook your dish here
@@ -76,7 +76,7 @@ for _ in range(T):
         summ=min(summ,i+j)
         i+=1
         j+=1
-    print(sum(A)-summ/2)
+    print(sum(A)-summ)
 ```
 
 ---
