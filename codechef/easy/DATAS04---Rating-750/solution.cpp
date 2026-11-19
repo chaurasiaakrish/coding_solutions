@@ -1,20 +1,30 @@
-    # TODO: 5. Create a scatterplot
-    # Arguments: data=df, x="bill_length_mm", y="bill_depth_mm", hue="species"
-    # Styling: palette="deep", s=100
-    sns.scatterplot(data=df, x="bill_length_mm", y="bill_depth_mm", hue="species",palette="deep", s=100)
+import seaborn as sns
 
-    # TODO: 6. Add Title and Axis Labels
-    # Title: "Bill Length vs Bill Depth by Penguin Species"
-    # X-label: "Bill Length (mm)", Y-label: "Bill Depth (mm)"
-    plt.title("Bill Length vs Bill Depth by Penguin Species")
-    plt.xlabel("Bill Length (mm)")
-    plt.ylabel("Bill Depth (mm)")
+import matplotlib
+matplotlib.use("Agg")  # headless mode (no GUI)
+
+import matplotlib.pyplot as plt
+
+# TODO: 1. Set the theme to "whitegrid" for better styling
+sns.set_theme(style="whitegrid")
+
+# 1. Load Penguin Dataset
+def load_data():
+    """
+    Load the penguins dataset using seaborn and clean it.
+    """
+    # TODO: 2. Load the "penguins" dataset
+    df = sns.load_dataset("penguins")
     
-    # TODO: 7. Save the plot as "bill_comparison.png"
-    filename = "bill_comparison.png"
-    plt.savefig(filename)
+    # TODO: 3. Drop rows with missing values, this prevents errors during plotting
+    df.dropna(inplace=True)
     
-    print(f"Scatter plot saved as: {filename}")
+    print("Dataset loaded and cleaned successfully!")
+    
+    if df is not None:
+        print("\nSample Data (first 5 rows):")
 
-
-# 3. Box Plot: Body Mass Distribution
+        # display only relevant columns (species, bill_length_mm, bill_depth_mm, body_mass_g)
+        print(df[['species', 'bill_length_mm', 'bill_depth_mm', 'body_mass_g']].head(5))
+    
+    return df
